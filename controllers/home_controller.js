@@ -3,3 +3,7 @@ module.exports.home = function(req,res){
 }
 
 // module.exports.actionName = function(req,res){};
+
+module.exports.slice = function(req,res){
+    res.end('<h1>Express is up for slice</h1>')
+}
