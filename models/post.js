@@ -14,5 +14,5 @@
         timestamps : true
     });
 
-    const post = mongoose.model('post',postSchema);
-    model.exports = post;
+    const post = mongoose.model('Post',postSchema);
+    model.exports = Post;
