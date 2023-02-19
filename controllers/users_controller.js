@@ -1,4 +1,6 @@
   const { response } = require('express');
+
+ // let's keep it same as before  
 const user = require('../models/user');
 const User = require('../models/user');
 
@@ -65,10 +67,12 @@ module.exports.create = function(req,res){
 
 // sing in and create the sessions for the user
 module.exports.createSession = function(req, res){
+  req.flash('sucess','Logged in Successfully');
     return res.redirect('/');
 }
 
 module.exports.destorySession = function(req,res){
       req.logout();
+      req.flash('sucess','Logged out Successfully');
   return res.redirect('/');
 }
