@@ -106,7 +106,7 @@ module.exports.create = function(req,res){
   });
 }
 
-// sing in and create the sessions for the user
+// sign in and create the sessions for the user
 module.exports.createSession = function(req, res){
   req.flash('sucess','Logged in Successfully');
     return res.redirect('/');
